@@ -7,7 +7,8 @@ data "aws_ami" "example" {
 
   filter {
     name   = "name"
-    values = ["amzn2-ami-kernel-*-hvm-*-x86_64-gp2"]
+  #  values = ["amzn2-ami-kernel-*-hvm-*-x86_64-gp2"]
+    values = ["al2023-ami-2023*"]
   }
 
   filter {
@@ -18,6 +19,10 @@ data "aws_ami" "example" {
   filter {
     name   = "root-device-type"
     values = ["ebs"]
+  }
+  filter {
+    name   = "architecture"
+    values = ["x86_64"]
   }
 }
 
