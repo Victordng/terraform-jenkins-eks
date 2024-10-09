@@ -1,0 +1,6 @@
+*.tfstate
+*.tfstate.*
+*.lock.*
+*.terraform
+.DS_Store
+.idea/
